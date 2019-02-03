@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddContact">
+ <include layout="@layout/toolbar"></include>
+
+    <RelativeLayout
+        android:layout_width="422dp"
+        android:layout_height="625dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="56dp">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="218dp"
+            android:layout_height="57dp"
+
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="74dp"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="64dp"
+            android:text="New Contact"
+            android:paddingLeft="12dp"
+            android:textColor="#1A8B76"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="112dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="254dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginLeft="59dp"
+            android:layout_marginTop="132dp"
+            android:hint="Name"
+            android:textColor="#ffff"
+            android:textColorHint="#F1EDED"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="216dp" />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/name"
+            android:layout_alignRight="@+id/name"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="190dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:hint="Number"
+            android:textColor="#ffff"
+            android:textColorHint="#F1EDED"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="287dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/number"
+            android:layout_alignLeft="@+id/number"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="245dp"
+            android:hint="Email"
+            android:textColor="#ffff"
+            android:textColorHint="#F1EDED"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.556" />
+
+        <EditText
+            android:id="@+id/organisation"
+            android:layout_width="256dp"
+            android:layout_height="58dp"
+            android:layout_alignStart="@+id/name"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="268dp"
+            android:hint="Organistaion"
+            android:textColor="#ffff"
+            android:textColorHint="#F1EDED"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="463dp" />
+
+        <Button
+            android:id="@+id/setrelationship"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="81dp"
+            android:layout_marginLeft="81dp"
+            android:layout_marginBottom="197dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="SET RELATIONSHIP"
+            android:textColor="#140F0F"
+            android:textSize="19dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="553dp" />
+
+        <Button
+            android:id="@+id/addcontact"
+            android:layout_width="409dp"
+            android:layout_height="62dp"
+            android:layout_alignEnd="@+id/setrelationship"
+            android:layout_alignRight="@+id/setrelationship"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="548dp"
+            android:layout_marginEnd="-126dp"
+            android:layout_marginRight="-126dp"
+            android:background="#F00"
+            android:paddingRight="27dp"
+            android:text="ADD CONTACT"
+            android:textColor="#ffff"
+            android:textSize="19dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="637dp" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
